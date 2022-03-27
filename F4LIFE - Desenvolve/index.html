@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4LIFE</title>
+    <!--icon-->
+    <link rel="shortcut icon" href="images/fav-icon.ico">
+    <link rel="stylesheet" href="assets/icons/style.css"/>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <main>
+        <header id="header">
+            <a id = logo1 href="#">F4LIFE</a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="button-hamburguer" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="#busca">Buscar Imóveis</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header >
+        
+        <!---main section | home-->
+        <section class="main-section">
+            <div class="home-image" id="busca">  
+            </div>
+            <div class="home-logo">
+                <img src="images/download.png" id="home-logo-image" >
+            </div>
+        </section>
+        <button class="button-find">Encontre um imóvel</button>
+        
+        <!---Cartões | Cards-->
+        <section class="services-section">
+            <div class="container grid">
+                <div class="cards grid">
+                    <div class="card">
+                        <i class="icon-key"></i>
+                        <h3 class="title">Pronto para morar</h3>
+                        <p>Nossos apartamentos são reformados e entregues prontinhos para você morar desde o primeiro dia.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-hourglass"></i>
+                        <h3 class="title">Flexibilidade de contrato</h3>
+                        <p>Aluguel a partir de 3 meses para você morar por quanto tempo quiser e livre de burocracias.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-wallet"></i>
+                        <h3 class="title">Todas as contas inclusas</h3>
+                        <p>Seu aluguel inclui: IPTU, condomínio, água, luz, gás e internet — e você ainda pode escolher pacotes com limpeza básica profissional.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-tools-2"></i>
+                        <h3 class="title">Reparos e manutenção</h3>
+                        <p>Deu ruim? Consertos estruturais são por nossa conta! É só nos avisar pelo app que a gente resolve rapidinho.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sobre | About-->
+        <section id="sobre" class="about-section">
+            <div class="about-text-container">
+                <h2>Quem Somos</h2>
+                <p>
+                    F4Life é uma empresa de aluguéis de repúblicas para estudantes universitários.<br>
+                    Similar aos modelos de Quinto Andar e Loft, nós realizamos reformas e preparamos 
+                    moradias para recepção de pessoas universitárias em um ambiente específico e 
+                    otimizado para a vida de graduação.
+                </p>
+            </div>
+            <div class="about-image-container">
+            </div>
+        </section>
+
+        <!--Serviços | Services-->
+        <h1 class="main-title-services">Serviços</h1>
+        <section class="services-section" id="services">
+            <div class="container grid">
+                <div class="cards grid">
+                    <div class=" services-card card">
+                        <a href="#"><img src="images/image4.jpg" class="image"></a>
+                        <h3 class="title-services title">Casas</h3> 
+                    </div>
+                    <div class="services-card card">
+                        <a href="#"><img src="images/image5.jpg" class="image"></a>
+                        <h3 class="title-services title">Kitnets</h3>
+                    </div>
+                    <div class="services-card card">
+                        <a href="#"><img src="images/image6.jpg" class="image"></a>
+                        <h3 class="title-services title">Apartamentos</h3>   
+                    </div>
+                    <div class="services-card card">
+                        <a href="#"><img src="images/image7.jpg" class="image"></a>
+                        <h3 class="title-services title">Quartos</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contato | Contact-->
+        <section id="contato" class="contact-section" >
+            <div id="contact-image-container" >
+            </div> 
+               
+            <div class="contact-container">
+                <h2 class="contact-title">Fale Conosco</h2>
+                <form class="contact-form" novalidate>
+                    <input type="text" placeholder="Nome" class="contact-input" name="name" id="name"/>
+                    <p class="erro hide" id="error-name-required">*Informe seu nome.</p>
+                    <input type="email" placeholder="E-mail" class="contact-input" name="email" id="email"/>
+                    <p class="erro hide" id="error-email-required">*Informe um e-mail.</p>
+                    <p class="erro hide" id="error-email">Endereço de e-mail inválido: O email deve seguir o formato "user@domain.com" <br>user: 1 a 32 caracteres, incluindo letras maiúsculas e minúsculas, numerais e ponto final.
+                      <br>domain: 1 a 16 caracteres, incluindo letras minúsculas e numerais.</p>
+                    <textarea name="usermessage" placeholder="Mensagem" id="text" cols="0" rows="6" class="contact-input"></textarea>
+                    <p class="erro hide" id="error-text">*Erro no envio: insira uma mensagem.</p>
+                    <button type="submit" class="contact-button button" id="submitId">Enviar</button>
+                    <p id="thanks"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Rodapé | Footer-->
+    <footer>
+        <div class="footer-logo-and-links">
+            <div class="footer-logo">
+                <a href="#" id="logo2">F4LIFE</a>
+            </div>
+            <div class="footer-links">
+                <nav class="nav-links">
+                    <ul>
+                        <p>Início</p>
+                        <li><a href="#" target="blank">Home</a></li>
+                        <li><a href="#" target="blank">Buscar imóveis</a></li>
+                        <li><a href="#" target="blank">Para proprietários</a></li>
+                    </u>
+                </nav>
+                <nav class="nav-links">
+                    <ul>
+                        <p>Suporte</p>
+                        <li><a href="#" target="blank">FAQ</a></li>
+                        <li><a href="#" target="blank">Telefones</a></li>
+                        <li><a href="#" target="blank">Chat</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-links">            
+                    <ul>
+                        <p>Sobre-nós</p>
+                        <li><a href="#" target="blank">Conheça a F4LIFE</a></li>
+                        <li><a href="#" target="blank">Regiões Atendidas</a></li>
+                        <li><a href="#" target="blank">Conheça as imobiliárias parceiras</a></li>
+                        <li><a href="#" target="blank">Medidas em relação à Covid-19</a></li>
+                    </u>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank" class="footer-icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="footer-icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://twitter.com" target="_blank" class="footer-icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+       <div class="attribution">
+            Challenge by <a href="https://desenvolve.grupoboticario.com.br" target="_blank">Desenvolve</a>.
+            Coded by <a href="https://github.com/nadezhdakarine" target="_blank">Nadezhda Souza</a>.
+       </div> 
+    </footer>
+    <script src="main.js"></script>
+    </body>
+</html>
